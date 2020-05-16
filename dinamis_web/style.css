@@ -1,0 +1,18 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+.card img{
+    min-width: 200px;
+}
+
+
+@media (min-width: 992px) {
+    body{
+        height: 1000px;
+    }
+    .carousel-item {
+        height: 500px;
+    }
+}
+
+   

@@ -57,49 +57,49 @@
                     case ($umur > 0 && $umur <= 3):
                 ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori <b>Batita</b></p>
+                            <p> Anda Masuk Kategori : <b>Batita</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 3 && $umur <= 5):
                     ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori <b>Balita</b></p>
+                            <p> Anda Masuk Kategori : <b>Balita</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 5 && $umur <= 12):
                     ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori <b>Anak-Anak</b></p>
+                            <p> Anda Masuk Kategori : <b>Anak-Anak</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 12 && $umur <= 17):
                     ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori <b>Remaja</b></p>
+                            <p> Anda Masuk Kategori : <b>Remaja</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 17 && $umur <= 30):
                     ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori <b>Pemuda</b></p>
+                            <p> Anda Masuk Kategori : <b>Pemuda</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 30 && $umur <= 60):
                     ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori <b>Dewasa</b></p>
+                            <p> Anda Masuk Kategori : <b>Dewasa</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 60):
                     ?>
                         <div class="alert alert-danger text-center h3 align-middle" role="alert">
-                            <p>Anda Masuk Kategori <b>Lansia</b> </p>
+                            <p>Anda Masuk Kategori : <b>Lansia</b> </p>
                         </div>
 
 

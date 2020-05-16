@@ -52,17 +52,17 @@
       <div class="col-lg-6 xs-auto mt-lg-4 border p-4 ">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
           <div class="form-group">
-            <label for="exampleInputEmail1">Nama Anda</label>
+            <label for="exampleInputEmail1" class="font-weight-bold">Nama Anda</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama" placeholder="Nama Anda">
           </div>
 
           <div class="form-group">
-            <label for="exampleInputPassword1">Gaji Pokok</label>
+            <label for="exampleInputPassword1" class="font-weight-bold">Gaji Pokok</label>
             <input type="number" class="form-control" id="exampleInputPassword1" name="gaji_pokok" placeholder="Gaji Pokok">
           </div>
 
           <div class="form-group">
-            <label for="exampleInputPassword1">Tunjangan</label>
+            <label for="exampleInputPassword1" class="font-weight-bold">Tunjangan</label>
             <input type="number" class="form-control" id="exampleInputPassword1" name="tunjangan" placeholder="Tunjangan">
           </div>
 
@@ -73,7 +73,7 @@
       </div>
       <!-- column kedua berada disini -->
       <div class="col-lg-6 col-md-12 border mt-lg-4 p-4 text-capitalize ">
-        
+
         <!-- disini ditampilan semua hasil dari pemrosesan -->
         <h3 class="text-left">Nama anda adalah :<br><?= $nama; ?></h3>
         <h3 class="text-left text-primary mt-lg-5">Gaji Total anda adalah : <br> Rp.<?= $total; ?> </h3>
