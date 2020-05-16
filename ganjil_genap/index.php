@@ -14,12 +14,19 @@
 
 <body>
   <?php
+  
+  // untuk menghilangkan error
+  error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+  error_reporting(E_ERROR);
+
+  // kode dibawah sini saya dapat dari w3schools untuk mengamankan form dari hacker
   $bilangan  = "";
 
   if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $bilangan = test_input($_POST['bilangan']);
   }
 
+  // kode pemrosesan berada disini
   $sisabagi = $bilangan % 2;
 
   function test_input($data)
@@ -31,21 +38,26 @@
   }
 
   ?>
+  <!-- tampilan dimulai dari sini -->
   <div class="container">
     <div class="row">
+      <!-- kolom dibawah adalah col dummy supaya object jadi center atau tengah -->
       <div class="col-lg-4"></div>
+      <!-- kolom dibawah ini adalah kolom asli -->
       <div class="col-lg-4 xs-auto mt-lg-5 border p-4 rounded">
         <?php
 
+        // kode dibawah sini logic berada dan ditampilkan di browser
         if ($sisabagi == 0) {
         ?>
-
+          <!-- kalau bilangan genap maka ditampilkan in -->
           <div class="alert alert-primary text-center h1 align-middle" role="alert">
             Bilangan Genap
           </div>
         <?php
         } else {
         ?>
+          <!-- kalau ganjil maka ditampilkan ini -->
           <div class="alert alert-danger text-center h1 align-middle" role="alert">
             Bilangan Ganjil
           </div>
@@ -53,16 +65,18 @@
         }
 
         ?>
+        <!-- ini adalah tempat dimana form atau input diberikan dan dikirim/diproses ke atas -->
+
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
           <h1 class="text-capitalize">Program penentu Ganjil/Genap</h1>
           <div class="form-group mt-4">
             <label for="exampleInputPassword1" class="font-weight-bold">Masukkan bilangan anda</label>
             <input type="number" class="form-control" id="exampleInputPassword1" name="bilangan">
           </div>
-
           <input type="submit" class="btn btn-primary"></input>
         </form>
       </div>
+      <!-- ini adalah col dummy  -->
       <div class="col-lg-4"></div>
     </div>
   </div>

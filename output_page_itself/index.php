@@ -14,7 +14,10 @@
 
 <body>
     <?php
+
     // define variables and set to empty values
+    // hal ini untuk mengamankan form dari hacker by w3schools
+    
     $name = $email = $gender = $comment = $website = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

@@ -14,9 +14,12 @@
 
 <body>
   <?php
+
+  // untuk menghilangkan error
   error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
   error_reporting(E_ERROR);
 
+  // kode dibawah ini saya copy dari w3school untuk keamanan
   $nama = $gajipokok = $tunjangan = "";
 
 
@@ -35,6 +38,7 @@
     $data = htmlspecialchars($data);
     return $data;
   }
+  // logika pemrosesan gaji berada di sini
   $total = $gajipokok + $tunjangan;
   $pajak = 0.05 * $total;
   $bpjs  = 0.03 * $total;
@@ -44,6 +48,7 @@
 
   <div class="container">
     <div class="row mt-lg-5">
+      <!-- tempat atau column pertama disini -->
       <div class="col-lg-6 xs-auto mt-lg-4 border p-4 ">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
           <div class="form-group">
@@ -66,9 +71,10 @@
 
         </form>
       </div>
-
+      <!-- column kedua berada disini -->
       <div class="col-lg-6 col-md-12 border mt-lg-4 p-4 text-capitalize ">
-
+        
+        <!-- disini ditampilan semua hasil dari pemrosesan -->
         <h3 class="text-left">Nama anda adalah :<br><?= $nama; ?></h3>
         <h3 class="text-left text-primary mt-lg-5">Gaji Total anda adalah : <br> Rp.<?= $total; ?> </h3>
         <h3 class="text-left text-success mt-lg-5">Gaji Bersih anda adalah : <br> Rp.<?= $gaber; ?> </h3>
