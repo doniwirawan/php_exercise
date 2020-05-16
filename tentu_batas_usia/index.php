@@ -50,56 +50,56 @@
                 <h3 class="text-capitalize text-center mb-4 h1 font-weight-bold">Program penentu Batas usia</h3>
 
                 <div class="alert alert-primary text-center h1 align-middle" role="alert">
-                    <h3 class=" text-center  text-capitalize">Hello, <?= $nama; ?></h3>
+                    <h3 class=" text-center  text-capitalize">Hello, <?="<b>" .$nama. "</b>"; ?></h3>
                 </div>
                 <?php
                 switch ($umur) {
                     case ($umur > 0 && $umur <= 3):
                 ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori batita</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p> Anda Masuk Kategori <b>Batita</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 3 && $umur <= 5):
                     ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori Balita</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p> Anda Masuk Kategori <b>Balita</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 5 && $umur <= 12):
                     ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori Anak-anak</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p> Anda Masuk Kategori <b>Anak-Anak</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 12 && $umur <= 17):
                     ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori Remaja</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p> Anda Masuk Kategori <b>Remaja</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 17 && $umur <= 30):
                     ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori Pemuda</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p> Anda Masuk Kategori <b>Pemuda</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 30 && $umur <= 60):
                     ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p> Anda Masuk Kategori Dewasa</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p> Anda Masuk Kategori <b>Dewasa</b></p>
                         </div>
                     <?php
                         break;
                     case ($umur > 60):
                     ?>
-                        <div class="alert alert-primary text-center h3 align-middle" role="alert">
-                            <p>Anda Masuk Kategori Lansia</p>
+                        <div class="alert alert-danger text-center h3 align-middle" role="alert">
+                            <p>Anda Masuk Kategori <b>Lansia</b> </p>
                         </div>
 
 
