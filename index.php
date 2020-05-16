@@ -16,9 +16,9 @@
   <div class="col-4"></div>
   <div class="col-lg-4 xs-auto mt-lg-5 border p-4 rounded">
     <form action="proses.php" method="post">
-    <h1 class="text-capitalize">masukkan bilangan anda</h1>
+    <h1 class="text-capitalize">Program penentu Ganjil/Genap</h1>
         <div class="form-group mt-4">
-            <label for="exampleInputPassword1" class="font-weight-bold">Masukkan angka anda</label>
+            <label for="exampleInputPassword1" class="font-weight-bold">Masukkan bilangan anda</label>
             <input type="number" class="form-control" id="exampleInputPassword1" name="bilangan">
         </div>
 
